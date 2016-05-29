@@ -1,0 +1,42 @@
+{
+    "name": "zeus-z80-asm",
+    "displayName": "Zeus Z80 Assembly",
+    "description": "Zeus Z80 for ZX Spectrum 48k support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "jia3ep",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "zeus",
+        "z80",
+        "sinclair",
+        "spectrum",
+        "48k"  
+    ],
+    "license": "SEE LICENSE IN LICENSE.md",
+    "homepage": "http://www.codeatcpp.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codeatcpp/vscode-language-z80-asm.git"
+    },
+    "bugs": {
+        "url": "https://github.com/codeatcpp/vscode-language-z80-asm/issues"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "zeus-asm",
+            "aliases": ["Asm (Zeus Z80)", "zeus-asm"],
+            "extensions": [".asm",".$C"],
+            "configuration": "./zeus-asm.configuration.json"
+        }],
+        "grammars": [{
+            "language": "zeus-asm",
+            "scopeName": "source.asm.z80",
+            "path": "./syntaxes/zeus-asm.tmLanguage"
+        }]
+    }
+}
